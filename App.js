@@ -18,7 +18,7 @@ export default function App() {
     signInWithEmailAndPassword(auth, userMail, userPass)
       .then((userCredential) => {
         const user = userCredential.user;
-        alert('Login realizado com sucesso: ' + user.email);
+        alert('Login realizado com sucesso!');
         console.log(user);
       })
       .catch((error) => {
